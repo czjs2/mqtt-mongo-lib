@@ -1,5 +1,5 @@
 {
-  "name": "mqtt-mongo",
+  "name": "mqtt-mongo-lib",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
