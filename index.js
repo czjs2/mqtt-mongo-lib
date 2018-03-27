@@ -39,3 +39,4 @@ function init() {
 // module.exports.conn = conn;
 module.exports.dbString = dbString;
 module.exports.init = init;
+module.exports.mongoose = mongoose;
