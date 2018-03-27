@@ -12,8 +12,8 @@ const dbConfig = config.mongoDB || {};
 const dbString = "mongodb://" + dbConfig.dbIp + ":" + dbConfig.dbPort + "/" + dbConfig.dbName;
 
 let options = {
-    'user': config.user,
-    'pass': config.pass,
+    'user': dbConfig.user,
+    'pass': dbConfig.pass,
     autoReconnect: true,
     reconnectTries: Number.MAX_VALUE, // Never stop trying to reconnect
     reconnectInterval: 500,
