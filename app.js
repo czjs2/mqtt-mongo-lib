@@ -15,7 +15,8 @@ const app = new mongoose.Schema(
             circleName: String,//唯一ID
             appInfos: [{appId: String, authority: String}],
         }],
-        memo: String
+        memo: String,
+        identifier: String
     });
 
 module.exports = mongoose.model('app', app);
