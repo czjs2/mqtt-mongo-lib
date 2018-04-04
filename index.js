@@ -25,7 +25,7 @@ let options = {
 function init() {
 
     mongoose.connection.on('open', function () {
-        console.log("数据库连接成功:" + config.dbIp + ",端口:" + config.dbPort + ' 数据库：' + config.dbName);
+        console.log("数据库连接成功:" + dbConfig.dbIp + ",端口:" + dbConfig.dbPort + ' 数据库：' + dbConfig.dbName);
     });
 
     mongoose.connection.on('error', function (error) {
